@@ -1,0 +1,31 @@
+:root {
+  --fs-lg: 1.25rem;
+  --fw-semibold: 500;
+}
+
+html {
+  font-size: 16px !important;
+  font-family: "Poppins", sans-serif !important;
+}
+
+/* Navegacion
+======================================================*/
+#navigation-container {
+  position:fixed;
+}
+
+header.dom-content-header #navigation-container .navbar-nav>li>a {
+  padding: 0 0.33rem;
+  font-weight: var(--fw-semibold);
+}
+
+.box_design_full {
+  font-family: "Poppins", sans-serif !important;
+}
+
+.box_design_full .box-desig-info .design_name a {
+  font-family: "Poppins", sans-serif !important;
+  text-transform: uppercase;
+  font-weight: 500;
+  font-size: var(--fs-lg);
+}
