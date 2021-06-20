@@ -1,6 +1,7 @@
 :root {
   --fs-lg: 1.25rem;
   --fw-semibold: 500;
+  --header-height:90px;
 }
 
 html {
@@ -12,11 +13,17 @@ html {
 ======================================================*/
 #navigation-container {
   position:fixed;
+  z-index:50;
+  top:0;
+  left:0;
+  width:100vw;
+  height: var(--header-height);
 }
 
 header.dom-content-header #navigation-container .navbar-nav>li>a {
   padding: 0 0.33rem;
   font-weight: var(--fw-semibold);
+  text-transform: uppercase;
 }
 
 .box_design_full {
