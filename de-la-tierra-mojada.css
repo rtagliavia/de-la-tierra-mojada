@@ -30,9 +30,15 @@ body {
 
 /* Reset de Tipografia
 ======================================================*/
-  .summary_checkout .form_group .summ_total strong, .checkout .step strong span, body, .bredcrumb b, .page_breadcrumb b, .breadcrumb b, .breadcrumbs b, .page_breadcrumb a, #subtotal_itms {
+.summary_checkout .form_group .summ_total strong,
+.checkout .step strong span,
+body, .bredcrumb b,
+.page_breadcrumb b,
+.breadcrumb b,
+.breadcrumbs b,
+.page_breadcrumb a, #subtotal_itms {
   font-family: var(--font-family-primary);
-
+}
 
 /* Navegacion
 ======================================================*/
