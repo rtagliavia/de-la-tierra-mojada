@@ -117,10 +117,10 @@ header.dom-content-header #navigation-container .navbar-nav>li>a:hover {
   position:relative;
 }
 
-.wdgt_h .fila_wdgt.tituloBoton .row>div .fila_wdgt[data-edit="Itext"] p:not(:empty) {
+.wdgt_h .fila_wdgt.tituloBoton .row>div .fila_wdgt div[data-edit="Itext"] p:not(:empty) {
   padding-top: 2em;
 }
-.wdgt_h .fila_wdgt.tituloBoton .row>div .fila_wdgt[data-edit="Itext"] p:not(:empty):before {
+.wdgt_h .fila_wdgt.tituloBoton .row>div .fila_wdgt div [data-edit="Itext"] p:not(:empty):before {
   position:absolute;
   content: "";
   display:block;
@@ -131,7 +131,7 @@ header.dom-content-header #navigation-container .navbar-nav>li>a:hover {
   background-color: var(--color-accent-1);
 }
 
-.wdgt_h .fila_wdgt.tituloBoton .row>div .fila_wdgt[data-edit="Ibutton"] a {
+.wdgt_h .fila_wdgt.tituloBoton .row>div .fila_wdgt div[data-edit="Ibutton"] a.boton {
   background-color: transparent;
   padding: 0 2em 0 0;
   color: var(--color-dark) !important;
