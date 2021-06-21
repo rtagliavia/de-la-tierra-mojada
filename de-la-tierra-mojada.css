@@ -171,11 +171,11 @@ header.dom-content-header #navigation-container .navbar-nav>li>a:hover {
   "description description";
 }
 
-.wdgt_h .fila_wdgt.galeria_002 .row>div .fila_wdgt[data-edit="Iimage"] {
+.wdgt_h .fila_wdgt.galeria_002 div[data-edit="Iimage"] {
   grid-area: image;
 }
 
-.wdgt_h .fila_wdgt.galeria_002 .row>div .fila_wdgt[data-edit="Ititle"] * {
+.wdgt_h .fila_wdgt.galeria_002 div[data-edit="Ititle"] * {
   grid-area: title;
   font-family: var(--font-family-primary);
   font-weight: var(--fw-semibold);
@@ -185,6 +185,9 @@ header.dom-content-header #navigation-container .navbar-nav>li>a:hover {
   padding-left: calc( 100% / 24 );
   color: var(--color-dark) !important;
   position:relative;
+}
+.wdgt_h .fila_wdgt.galeria_002 .fila_wdgt:nth-child(3) {
+  grid-area: description;
 }
 .wdgt_h .fila_wdgt.galeria_002 div[data-edit="Itext"] * {
   grid-area: description;
@@ -210,7 +213,9 @@ header.dom-content-header #navigation-container .navbar-nav>li>a:hover {
   width:3.5em;
   background-color: var(--color-accent-1);
 }
-
+.wdgt_h .fila_wdgt.galeria_002 .fila_wdgt:last-child {
+  grid-area: link;
+}
 .wdgt_h .fila_wdgt.galeria_002 div[data-edit="Ibutton"] a.boton{
   grid-area: link;
   background-color: transparent;
