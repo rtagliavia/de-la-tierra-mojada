@@ -17,6 +17,8 @@
   
   /* sizing and positions */
   --header-height:90px;
+  
+  --link-arrow: url("data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" enable-background="new 0 0 24 24" height="24px" viewBox="0 0 24 24" width="24px" fill="currentColor"><rect fill="none" height="24" width="24"/><path d="M9,5v2h6.59L4,18.59L5.41,20L17,8.41V15h2V5H9z"/></svg>");
 }
 
 html {
@@ -135,7 +137,7 @@ header.dom-content-header #navigation-container .navbar-nav>li>a:hover {
   background-color: transparent;
   padding: 0 2em 0 0;
   color: var(--color-dark) !important;
-  background: url("https://aws-samishop-recursos.s3.us-east-1.amazonaws.com/00000E0F/files/north_east_black_24dp.svg");
+  background: var(--link-arrow);
   background-position: right center;
   background-repeat: no-repeat;
   background-size: contain;
