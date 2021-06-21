@@ -161,7 +161,7 @@ header.dom-content-header #navigation-container .navbar-nav>li>a:hover {
 }
 
 /*widget galeria 2 */
-.wdgt_h .fila_wdgt.galeria002 .row>div {
+.wdgt_h .fila_wdgt.galeria_002 .row>div {
   display: grid;
   grid-template-columns: 1fr auto;
   grid-template-rows: auto auto auto;
@@ -171,11 +171,11 @@ header.dom-content-header #navigation-container .navbar-nav>li>a:hover {
   "description description";
 }
 
-.wdgt_h .fila_wdgt.galeria002 .row>div .fila_wdgt[data-edit="Iimage"] {
+.wdgt_h .fila_wdgt.galeria_002 .row>div .fila_wdgt[data-edit="Iimage"] {
   grid-area: image;
 }
 
-.wdgt_h .fila_wdgt.galeria002 .row>div .fila_wdgt[data-edit="Ititle"] * {
+.wdgt_h .fila_wdgt.galeria_002 .row>div .fila_wdgt[data-edit="Ititle"] * {
   grid-area: title;
   font-family: var(--font-family-primary);
   font-weight: var(--fw-semibold);
@@ -186,7 +186,7 @@ header.dom-content-header #navigation-container .navbar-nav>li>a:hover {
   color: var(--color-dark) !important;
   position:relative;
 }
-.wdgt_h .fila_wdgt.galeria002 div[data-edit="Itext"] * {
+.wdgt_h .fila_wdgt.galeria_002 div[data-edit="Itext"] * {
   grid-area: description;
   font-family: var(--font-family-primary);
   font-weight: var(--fw-light);
@@ -197,10 +197,10 @@ header.dom-content-header #navigation-container .navbar-nav>li>a:hover {
   position:relative;
 }
 
-.wdgt_h .fila_wdgt.galeria002 div[data-edit="Itext"] p:not(:empty) {
+.wdgt_h .fila_wdgt.galeria_002 div[data-edit="Itext"] p:not(:empty) {
   padding-top: 2em;
 }
-.wdgt_h .fila_wdgt.galeria002 div[data-edit="Itext"] p:not(:empty):before {
+.wdgt_h .fila_wdgt.galeria_002 div[data-edit="Itext"] p:not(:empty):before {
   position:absolute;
   content: "";
   display:block;
