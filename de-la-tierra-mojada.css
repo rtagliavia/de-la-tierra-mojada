@@ -39,6 +39,23 @@ body {
 
 /* Reset de Tipografia
 ======================================================*/
+.wdgt_h>.fila_wdgt:not(.bannerHome) {
+  max-width:90vw;
+  margin:auto;
+}
+@media screen and (min-width: 992px) {
+  .wdgt_h>.fila_wdgt:not(.bannerHome) {
+  max-width: calc( 992 - 4rem);
+  }
+}
+@media screen and (min-width: 1200px) {
+  .wdgt_h>.fila_wdgt:not(.bannerHome) {
+  max-width: calc( 1200 - 4rem);
+  }
+}
+
+/* Reset de Tipografia
+======================================================*/
 .summary_checkout .form_group .summ_total strong,
 .checkout .step strong span,
 body, .bredcrumb b,
@@ -132,14 +149,15 @@ header.dom-content-header #navigation-container .navbar-nav>li>a:hover {
   background-color: var(--color-accent-1);
 }
 
-.wdgt_h .fila_wdgt.tituloBoton div[data-edit="Ibutton"] a.boton {
+.wdgt_h .fila_wdgt.tituloBoton div[data-edit="Ibutton"] a.boton,
+.wdgt_h .fila_wdgt.galeria_002 div[data-edit="Ibutton"] a.boton{
   background-color: transparent;
   padding: 0 2em 0 0;
   color: var(--color-dark) !important;
   background: var(--link-arrow);
-  background-position: right center;
+  background-position: right top;
   background-repeat: no-repeat;
-  background-size: contain;
+  background-size: 1.3em auto;
 }
 
 .box_design_full {
