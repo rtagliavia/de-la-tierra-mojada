@@ -1,4 +1,5 @@
 :root {
+  /* fonts and texts*/
   --font-family-primary: "Poppins", sans-serif !important;
   --fs-xxl: 3.5rem;
   --fs-xl:2.25rem;
@@ -9,6 +10,12 @@
   --fw-semibold: 500;
   --fw-light: 300;
   --fw-regular:400;
+  
+  /* colors */
+  --color-dark: #333132;
+  --color-secondary: #333132cc;
+  
+  /* sizing and positions */
   --header-height:90px;
 }
 
@@ -49,11 +56,11 @@ body, .bredcrumb b,
   left:0;
   width:100vw;
   height: var(--header-height);
-  position:relative;
   -webkit-box-shadow:0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
   -moz-box-shadow:0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
   box-shadow:0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
 }
+
 #navigation-container:before, #navigation-container:after
 {
   content:"";
@@ -91,7 +98,47 @@ header.dom-content-header #navigation-container .navbar-nav>li>a:hover {
 
 .wdgt_h .fila_wdgt.tituloBoton .row>div .fila_wdgt[data-edit="Ititle"] * {
   font-family: var(--font-family-primary);
-  font-weight: 
+  font-weight: var(--fw-semibold);
+  text-transform: uppercase;
+  font-size: var(--fs-xl) !important;
+  text-align: left !important;
+  padding-left: calc( 100% / 24 );
+  color: var(--color-dark) !important;
+  position:relative;
+}
+.wdgt_h .fila_wdgt.tituloBoton .row>div .fila_wdgt[data-edit="Itext"] * {
+  font-family: var(--font-family-primary);
+  font-weight: var(--fw-light);
+  text-transform: uppercase;
+  font-size: var(--fs-lg) !important;
+  text-align: left !important;
+  padding-left: calc( 100% / 24 );
+  color: var(--color-secondary) !important;
+  position:relative;
+}
+
+.wdgt_h .fila_wdgt.tituloBoton .row>div .fila_wdgt[data-edit="Itext"] p:not(:empty) {
+  padding-top: 2em;
+}
+.wdgt_h .fila_wdgt.tituloBoton .row>div .fila_wdgt[data-edit="Itext"] p:not(:empty):before {
+  position:absolute;
+  content: "";
+  display:block;
+  height:1px;
+  top:1em;
+  left:0;
+  width:3.5em;
+  background-color: var(--color-accent-1);
+}
+
+.wdgt_h .fila_wdgt.tituloBoton .row>div .fila_wdgt[data-edit="Ibutton"] a {
+  background-color: transparent;
+  padding: 0 2em 0 0;
+  color: var(--color-dark) !important;
+  background: url("https://aws-samishop-recursos.s3.us-east-1.amazonaws.com/00000E0F/files/north_east_black_24dp.svg");
+  background-position: right center;
+  background-repeat: no-repeat;
+  background-size: contain;
 }
 
 .box_design_full {
