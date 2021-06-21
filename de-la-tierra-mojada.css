@@ -149,8 +149,7 @@ header.dom-content-header #navigation-container .navbar-nav>li>a:hover {
   background-color: var(--color-accent-1);
 }
 
-.wdgt_h .fila_wdgt.tituloBoton div[data-edit="Ibutton"] a.boton,
-.wdgt_h .fila_wdgt.galeria_002 div[data-edit="Ibutton"] a.boton{
+.wdgt_h .fila_wdgt.tituloBoton div[data-edit="Ibutton"] a.boton{
   background-color: transparent;
   padding: 0 2em 0 0;
   color: var(--color-dark) !important;
@@ -158,6 +157,70 @@ header.dom-content-header #navigation-container .navbar-nav>li>a:hover {
   background-position: right top;
   background-repeat: no-repeat;
   background-size: 1.3em auto;
+  line-height:1.5rem;
+}
+
+/*widget galeria 2 */
+.wdgt_h .fila_wdgt.galeria002 .row>div {
+  display: grid;
+  grid-template-columns: 1fr auto;
+  grid-template-rows: auto auto auto;
+  grid-template-areas: 
+  "image image"
+  "title link"
+  "description description";
+}
+
+.wdgt_h .fila_wdgt.galeria002 .row>div .fila_wdgt[data-edit="Iimage"] {
+  grid-area: image;
+}
+
+.wdgt_h .fila_wdgt.galeria002 .row>div .fila_wdgt[data-edit="Ititle"] * {
+  grid-area: title;
+  font-family: var(--font-family-primary);
+  font-weight: var(--fw-semibold);
+  text-transform: uppercase;
+  font-size: var(--fs-xl) !important;
+  text-align: left !important;
+  padding-left: calc( 100% / 24 );
+  color: var(--color-dark) !important;
+  position:relative;
+}
+.wdgt_h .fila_wdgt.galeria002 div[data-edit="Itext"] * {
+  grid-area: description;
+  font-family: var(--font-family-primary);
+  font-weight: var(--fw-light);
+  font-size: var(--fs-lg) !important;
+  text-align: left !important;
+  padding-left: calc( 100% / 24 );
+  color: var(--color-secondary) !important;
+  position:relative;
+}
+
+.wdgt_h .fila_wdgt.galeria002 div[data-edit="Itext"] p:not(:empty) {
+  padding-top: 2em;
+}
+.wdgt_h .fila_wdgt.galeria002 div[data-edit="Itext"] p:not(:empty):before {
+  position:absolute;
+  content: "";
+  display:block;
+  height:1px;
+  top:1em;
+  left:0;
+  width:3.5em;
+  background-color: var(--color-accent-1);
+}
+
+.wdgt_h .fila_wdgt.galeria_002 div[data-edit="Ibutton"] a.boton{
+  grid-area: link;
+  background-color: transparent;
+  padding: 0 2em 0 0;
+  color: var(--color-dark) !important;
+  background: var(--link-arrow);
+  background-position: right top;
+  background-repeat: no-repeat;
+  background-size: 1.3em auto;
+  line-height:1.5rem;
 }
 
 .box_design_full {
