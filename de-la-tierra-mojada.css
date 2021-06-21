@@ -146,9 +146,20 @@ header.dom-content-header #navigation-container .navbar-nav>li>a:hover {
   font-family: "Poppins", sans-serif !important;
 }
 
-.box_design_full .box-desig-info .design_name a {
+.box_design_full .box-design-info .design_name a {
   font-family: "Poppins", sans-serif !important;
   text-transform: uppercase;
-  font-weight: 500;
-  font-size: var(--fs-lg);
+  font-weight: var(--fw-semibold);
+  font-size: var(--fs-lg) !important;
+  color: var(--color-dark);
+  height:3em;
+  max-height:3em;
+  overflow:hidden;
+}
+.box_design_full .box-design-info .design_price * {
+  font-family: "Poppins", sans-serif !important;
+  text-transform: uppercase;
+  font-weight: var(--fw-semibold);
+  font-size: var(--fs-xl) !important;
+  color: var(--color-accent-1);
 }
